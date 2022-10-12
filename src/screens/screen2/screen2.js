@@ -4,7 +4,7 @@ import { View, Button, Text } from 'react-native';
 
 
 const Screen2 = ({route, navigation}) => {
-    var name = route.personName;
+    var name = route.params.personName;
 
     return (
         <View>
