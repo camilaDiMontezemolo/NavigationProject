@@ -10,12 +10,12 @@ const Screen1 = ({navigation}) => {
         <View>
             <TextInput
             value={text}
-            onChangeText={(someText) => {setText(text);}}
+            onChangeText={(someText) => {setText(someText);}}
             />
             <Button
             title="Avanzar"
             onPress={() => navigation.navigate('screen2', {
-                name: text,
+                personName: text,
             })}
             />
         </View>
