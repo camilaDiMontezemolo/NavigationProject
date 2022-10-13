@@ -4,14 +4,13 @@ import { View, Button, Text } from 'react-native';
 
 
 const Drawer2 = ({navigation}) => {
-    
-    useEffect( () => {
 
+    useEffect(() => {
         const unsubscribe = navigation.addListener('focus', () => {
             console.log('render');
-        })
-        
-        return unsubscribe
+        });
+
+        return unsubscribe;
     }, [navigation]);
 
     return (
