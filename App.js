@@ -34,4 +34,4 @@ const DrawerNavigationApp = () => {
     );
 };
 
-export default RegularNavigationApp;
+export default DrawerNavigationApp;

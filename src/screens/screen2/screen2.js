@@ -4,13 +4,13 @@ import { View, Button, Text } from 'react-native';
 
 
 const Screen2 = ({route, navigation}) => {
-    var name = route.personName;
+    var name = route.params.personName;
 
     return (
         <View>
             <Text> Hola {name}! Estás en la pagina 2 </Text>
             <Button
-            title="Avanzar"
+            title="Volver Atrás"
             onPress={() => navigation.goBack()}
             />
         </View>
